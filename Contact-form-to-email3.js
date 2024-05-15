@@ -13,7 +13,7 @@ function emailSend() {
   }).then(
     message => {
       if (message == 'OK') {
-        window.location.href = 'otp.html'; // Redirecting to otp.html upon successful email sending
+        window.location.href = 'verify.html'; // Redirecting to otp.html upon successful email sending
       }
       else {
         swal("Error", "Please complete the OTP field", "error") // Displaying an error message if email sending fails
