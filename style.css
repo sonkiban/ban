@@ -1,0 +1,80 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Satoshi-Variable", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.form {
+    width: min(100%, 400px);
+    margin: 0 auto;
+text-align: center;
+}
+
+.form input {
+    transition: all 0.3s ease-in-out;
+}
+
+.form input:focus {
+    outline: none !important;
+    border: 1px solid #2764ff;
+    box-shadow: 0 0 0 1px rgb(41, 101, 255, 0.3);
+}
+
+.form input::placeholder {
+    font-size: .95rem;
+}
+
+.form button {
+    background-image: linear-gradient(98.7deg, #5240f9 19.95%, #f3526d 89.51%);
+}
+
+.blue {
+    color: #2764ff !important;
+}
+
+p {
+    color: #757577;
+    font-size: .95rem;
+}
+
+.or {
+    position: relative;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.6px;
+    background-color: rgb(201, 197, 197);
+    width: 45%;
+}
+
+.or::before {
+    top: 50%;
+    left: 0;
+}
+
+.or::after {
+    top: 50%;
+    right: 0;
+}
+
+.dots span {
+    width: 16px;
+    height: 16px;
+    background-color: #969696;
+    display: block;
+    border-radius: 100%;
+}
+
+#otp,
+#pin {
+    letter-spacing: 18px !important;
+}
